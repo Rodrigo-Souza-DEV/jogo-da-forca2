@@ -1,0 +1,359 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #tela-inicial {
+            width: 780px;
+            height: 600px;
+            background-color: rgb(213, 212, 212);
+            margin: 50px auto;
+            border-radius: 10px;
+
+        }
+
+        #tela {
+            width: 755px;
+            height: 535px;
+            background-color: black;
+            margin: 0 auto;
+            border-radius: 10px;
+            /*background: rgba(120,132,141,0.89) url("img/fundo-extra.jpg") no-repeat ;*/
+
+            background: rgb(64, 238, 110);
+            background: radial-gradient(circle, rgba(64, 238, 110, 1) 0%, rgba(126, 186, 137, 1) 3%, rgba(70, 95, 252, 1) 88%);
+            display: block;
+            z-index: 5;
+            display: block;
+            /*Mudar a tela inicia */
+
+
+        }
+
+        #tela-inicial h1 {
+            color: rgb(103, 182, 103);
+            padding-left: 20px;
+            padding-bottom: 5px;
+            padding-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+
+        }
+
+        #img-forca {
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 277px;
+            top: 110px;
+            display: block;
+        }
+
+        #bt-inicia {
+            background-color: rgb(60, 191, 147);
+            width: 210px;
+            height: 65px;
+            border: 5px solid white;
+            border-radius: 10px;
+            color: white;
+            position: relative;
+            left: 272px;
+            top: 140px;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            animation-name: pulse;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
+
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        #bt-inicia:hover {
+            color: yellow;
+            border-color: yellow;
+        }
+
+        #barra {
+            width: 755px;
+            height: 50px;
+            background-color: white;
+            position: relative;
+            top: 160px;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background: rgba(63, 251, 97, 0.2);
+
+
+        }
+
+        #jogo {
+            width: 755px;
+            height: 535px;
+            background: rgb(132, 201, 132);
+            background: radial-gradient(circle, rgba(132, 201, 132, 0.7007003484987745) 9%, rgba(44, 104, 193, 0.8407563709077381) 98%);
+            position: relative;
+            bottom: 601px;
+            margin: 0 auto;
+            border-radius: 10px;
+            display: none;
+            /**Mudar aqui ===========================**/
+        }
+
+        #forca {
+            background-color: white;
+            position: absolute;
+
+
+        }
+
+        #base {
+            background-color: rgb(121, 82, 11);
+            width: 180px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            top: 210px;
+            left: 10px;
+        }
+
+        #coluna {
+            background-color: rgb(157, 107, 14);
+            width: 25px;
+            height: 190px;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+            z-index: 2;
+        }
+
+        #diagonal {
+            background: rgb(159, 109, 17);
+            background: linear-gradient(12deg, rgba(159, 109, 17, 1) 42%, rgba(106, 73, 12, 1) 70%);
+            width: 20px;
+            height: 100px;
+            position: absolute;
+            top: 35px;
+            left: 75px;
+            transform: rotate(50deg);
+            z-index: 0;
+        }
+
+        #vertical {
+            width: 160px;
+            height: 30px;
+            background: rgb(159, 109, 17);
+            background: linear-gradient(90deg, rgba(159, 109, 17, 1) 4%, rgba(106, 73, 12, 1) 15%, rgba(198, 136, 21, 1) 15%);
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        #corda {
+            background-color: orangered;
+            width: 10px;
+            height: 50px;
+            position: absolute;
+            left: 155px;
+            top: 30px;
+
+        }
+
+        #cabeca {
+            background-color: black;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: absolute;
+            left: 140px;
+            top: 70px;
+        }
+
+        #corpo {
+            background-color: black;
+            width: 10px;
+            height: 80px;
+            position: absolute;
+            left: 155px;
+            top: 80px;
+        }
+
+        #braco-esquerdo {
+            background-color: black;
+            width: 10px;
+            height: 40px;
+            position: absolute;
+            left: 135px;
+            top: 110px;
+            transform: rotate(60deg);
+        }
+
+        #braco-direito {
+            background-color: black;
+            width: 10px;
+            height: 40px;
+            position: absolute;
+            left: 175px;
+            top: 110px;
+            transform: rotate(120deg);
+        }
+
+        #perna-direita {
+            background-color: black;
+            width: 10px;
+            height: 50px;
+            position: absolute;
+            left: 170px;
+            top: 147px;
+            transform: rotate(140deg);
+        }
+
+        #perna-esquerda {
+            background-color: black;
+            width: 10px;
+            height: 50px;
+            position: absolute;
+            left: 147px;
+            top: 147px;
+            transform: rotate(200deg);
+        }
+
+        #pergunta {
+            background: rgb(186, 245, 179);
+            background: linear-gradient(5deg, rgba(186, 245, 179, 0.05924376586572133) 3%, rgba(0, 44, 110, 0.048039284073004174) 79%);
+            width: 400px;
+            position: absolute;
+            left: 240px;
+            top: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+
+        }
+
+        #bt-alf {
+            position: absolute;
+            top: 340px;
+            left: 100px;
+            width: 550px;
+            text-align: center;
+        }
+
+        #bt-alf button {
+            background: rgb(255, 255, 255);
+            background: radial-gradient(circle, rgba(255, 255, 255, 1) 19%, rgba(44, 104, 193, 0.5746499283307073) 100%);
+            border-radius: 100%;
+            height: 56px;
+            width: 56px;
+            color: #002c6e;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #resposta {
+            position: absolute;
+            top: 250px;
+            height: 50px;
+            text-align: center;
+            background-color: rgba(0, 44, 110, 0.2);
+            width: 755px;
+        }
+
+
+        .letra {
+            width: 50px;
+            height: 44px;
+            margin: 3px;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            font-size: 25px;
+            color: #002c6e;
+            background: rgb(255, 255, 255);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(73, 122, 195, 0.4) 71%);
+        }
+
+        #game-over {
+            width: 755px;
+            height: 535px;
+            background: black;
+            position: relative;
+            margin: 0 auto;
+            bottom: 600px;
+            border-radius: 10px;
+            display: block;
+            color: red;
+            text-align: center;
+            font-size: 50px;
+            display: none;
+        }
+
+        img {
+            position: relative;
+            top: 120px;
+            animation-name: bounce;
+            transform-origin: center bottom;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+        }
+
+
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            53%,
+            80%,
+            100% {
+                -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+            40%,
+            43% {
+                -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+                transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+                -webkit-transform: translate3d(0, -30px, 0);
+                transform: translate3d(0, -30px, 0);
+            }
+
+            70% {
+                -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+                transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+                -webkit-transform: translate3d(0, -15px, 0);
+                transform: translate3d(0, -15px, 0);
+            }
+
+            90% {
+                -webkit-transform: translate3d(0, -4px, 0);
+                transform: translate3d(0, -4px, 0);
+            }
+        }

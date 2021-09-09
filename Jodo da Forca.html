@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>49 Jogo da Forca</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="tela-inicial">
+        <h1>Jogo da Forca</h1>
+        <div id="tela">
+            <img src="img/jogo-forca.png" id="img-forca">
+            <button id="bt-inicia">Play Now</button>
+            <div id="barra">Jogo da Forca</div>
+
+        </div>
+    </div>
+    <div id="jogo">
+        <div id="forca">
+            <div id="vertical"></div>
+            <div id="diagonal"></div>
+            <div id="coluna"></div>
+            <div id="base"></div>
+            <div id="corda"></div>
+            <div id="cabeca"></div>
+            <div id="corpo"></div>
+            <div id="braco-esquerdo"></div>
+            <div id="braco-direito"></div>
+            <div id="perna-esquerda"></div>
+            <div id="perna-direita"></div>
+        </div>
+
+        <div id="pergunta">
+            <h1 id="pg"></h1>
+        </div>
+        <div id="resposta">
+            <input type="text" id="letra0" class="letra" maxlength="1">
+            <input type="text" id="letra1" class="letra" maxlength="1">
+            <input type="text" id="letra2" class="letra" maxlength="1">
+            <input type="text" id="letra3" class="letra" maxlength="1">
+            <input type="text" id="letra4" class="letra" maxlength="1">
+            <input type="text" id="letra5" class="letra" maxlength="1">
+            <input type="text" id="letra6" class="letra" maxlength="1">
+            <input type="text" id="letra7" class="letra" maxlength="1">
+            <input type="text" id="letra8" class="letra" maxlength="1">
+            <input type="text" id="letra9" class="letra" maxlength="1">
+        </div>
+        <div id="bt-alf">
+            <button id="a" onclick="aA()">A</button>
+            <button id="b" onclick="bA()">B</button>
+            <button id="c" onclick="cA()">C</button>
+            <button id="d" onclick="dA()">D</button>
+            <button id="e" onclick="eA()">E</button>
+            <button id="f" onclick="fA()">F</button>
+            <button id="g" onclick="gA()">G</button>
+            <button id="h" onclick="hA()">H</button>
+            <button id="i" onclick="iA()">I</button>
+            <button id="j" onclick="jA()">J</button>
+            <button id="k" onclick="kA()">K</button>
+            <button id="l" onclick="lA()">L</button>
+            <button id="m" onclick="mA()">M</button>
+            <button id="n" onclick="nA()">N</button>
+            <button id="o" onclick="oA()">O</button>
+            <button id="p" onclick="pA()">P</button>
+            <button id="q" onclick="qA()">Q</button>
+            <button id="r" onclick="rA()">R</button>
+            <button id="s" onclick="sA()">S</button>
+            <button id="t" onclick="tA()">T</button>
+            <button id="u" onclick="uA()">U</button>
+            <button id="v" onclick="vA()">V</button>
+            <button id="w" onclick="wA()">W</button>
+            <button id="x" onclick="xA()">X</button>
+            <button id="y" onclick="yA()">Y</button>
+            <button id="z" onclick="zA()">Z</button>
+        </div>
+
+    </div>
+    <div id="game-over">
+        <img src="img/game-over.jpg" width="450px" alt="">
+    </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
